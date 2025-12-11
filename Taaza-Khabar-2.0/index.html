@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taaza Khabar | Live News</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-top">
+            <a href="#" onclick="fetchNews('')" class="logo-link">
+                <h1 class="logo">Taaza Khabar</h1>
+            </a>
+            
+            <div class="search-box">
+                <input type="text" id="search-input" class="inputPlace" placeholder="Search news...">
+                <button id="search-btn" class="btn">Search</button>
+            </div>
+        </div>
+        <div class="nav-links">
+            <button class="nav-item" onclick="handleCategoryClick('')">Home</button>
+            <button class="nav-item" onclick="handleCategoryClick('india')">India</button>
+            <button class="nav-item" onclick="handleCategoryClick('world')">World</button>
+            <button class="nav-item" onclick="handleCategoryClick('politics')">Politics</button>
+            <button class="nav-item" onclick="handleCategoryClick('technology')">Tech</button>
+            
+            <button class="nav-item" onclick="toggleWeatherModal()" style="color: #ffeb3b;">
+                Weather ☁️
+            </button>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <div id="status-container"></div>
+        <section id="hero-container"></section>
+        <h2 id="section-title" class="section_title">Top Stories</h2>
+        <div id="news-grid" class="parent"></div>
+    </main>
+
+    <div id="weather-modal" class="modal-overlay">
+        <div class="weather-paper">
+            <button class="close-modal" onclick="toggleWeatherModal()">&times;</button>
+            
+            <div class="w-header">
+                <h2 class="section_title" style="margin: 0; border: none;">Live Weather</h2>
+                <div class="search-box">
+                    <input type="text" id="w-input" class="inputPlace" placeholder="City (e.g. Mumbai)">
+                    <button type="button" id="w-btn" class="btn">Check</button>
+                </div>
+            </div>
+
+            <div class="w-content">
+                <div class="w-main">
+                    <div class="w-data-group">
+                        <p id="cityid" class="w-city">New Delhi</p>
+                        <p id="regionid" class="w-sub">Region, Country</p>
+                        <p id="timeid" class="w-date">Local Time</p>
+                    </div>
+                    <div class="w-temp-group">
+                        <img id="imgid" src="" alt="Weather Icon" class="w-icon">
+                        <p id="tempid" class="w-temp">--°</p>
+                        <p id="textid" class="w-condition">Condition</p>
+                    </div>
+                </div>
+
+                <hr class="divider">
+
+                <div class="w-grid">
+                    <div class="w-box">
+                        <p class="w-label">Wind</p>
+                        <p id="wind_kphid" class="w-value">-- km/h</p>
+                        <p id="wind_dirid" class="w-small">Direction: --</p>
+                    </div>
+                    <div class="w-box">
+                        <p class="w-label">Humidity</p>
+                        <p id="humidityid" class="w-value">--%</p>
+                    </div>
+                    <div class="w-box">
+                        <p class="w-label">Pressure</p>
+                        <p id="pressureid" class="w-value">-- mb</p>
+                    </div>
+                    <div class="w-box">
+                        <p class="w-label">Air Quality</p>
+                        <p id="aqi-badge" class="w-value aqi-bad">--</p>
+                        <p class="w-small">PM2.5: <span id="pm25id">--</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Taaza Khabar Media.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
