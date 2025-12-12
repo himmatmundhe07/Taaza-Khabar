@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taaza Khabar | Live News</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <nav class="navbar">
@@ -14,7 +17,7 @@
             <a href="#" onclick="fetchNews('')" class="logo-link">
                 <h1 class="logo">Taaza Khabar</h1>
             </a>
-            
+
             <div class="search-box">
                 <input type="text" id="search-input" class="inputPlace" placeholder="Search news...">
                 <button id="search-btn" class="btn">Search</button>
@@ -26,7 +29,7 @@
             <button class="nav-item" onclick="handleCategoryClick('world')">World</button>
             <button class="nav-item" onclick="handleCategoryClick('politics')">Politics</button>
             <button class="nav-item" onclick="handleCategoryClick('technology')">Tech</button>
-            
+
             <button class="nav-item" onclick="toggleWeatherModal()" style="color: #ffeb3b;">
                 Weather ☁️
             </button>
@@ -43,7 +46,7 @@
     <div id="weather-modal" class="modal-overlay">
         <div class="weather-paper">
             <button class="close-modal" onclick="toggleWeatherModal()">&times;</button>
-            
+
             <div class="w-header">
                 <h2 class="section_title" style="margin: 0; border: none;">Live Weather</h2>
                 <div class="search-box">
@@ -94,10 +97,17 @@
 
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Taaza Khabar Media.</p>
+            <div class="footer-links">
+                <a href="about.html">About Taaza Khabar</a>
+                <a href="about.html">Contact Us</a>
+                <a href="about.html">Advertise</a>
+                <a href="about.html">Privacy Policy</a>
+            </div>
+            <p>&copy; 2025 Taaza Khabar Media. Powered by The Demu&Co.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
