@@ -41,16 +41,11 @@ The repository contains two versions of the application:
    git clone [https://github.com/himmatmundhe07/taaza-khabar.git](https://github.com/himmatmundhe07/taaza-khabar.git)
 
   
-    ## 👨‍💻 About the Developer
-**Himmat Mundhe** *Student Developer | Department of Computer Science* *Student of CodingGita*
+   👨‍💻 About the Developer
+Himmat Mundhe Student Developer | Department of Computer Science Student of CodingGita
 
-> "The goal of this project was to build a functional, responsive News Application that interacts with a real-world API."
+"The goal of this project was to build a functional, responsive News Application that interacts with a real-world API."
 
-<div align="left">
-  <a href="https://github.com/himmatmundhe07" target="_blank">
-    <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-  </a>
-</div>
+<div align="left"> <a href="https://github.com/himmatmundhe07" target="_blank"> <img src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"> </a> </div>
 
----
-*© 2025 Taaza Khabar Media. Powered by The Demu&Co.*
+© 2025 Taaza Khabar Media. Powered by The Demu&Co.
