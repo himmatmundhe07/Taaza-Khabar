@@ -39,7 +39,8 @@ The repository contains two versions of the application:
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/himmatmundhe07/taaza-khabar.git](https://github.com/himmatmundhe07/taaza-khabar.git)
-
+    ```
+    
    ## 👨‍💻 About the Developer
 
 **Himmat Mundhe** *Student Developer | Department of Computer Science* *Student of CodingGita*
